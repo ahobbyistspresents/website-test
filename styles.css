@@ -72,12 +72,11 @@
         }
         .full-container {
             width: 90%;
-            padding: 20px;
-            text-align: left;
             padding-left: 100px;
             padding-bottom: 25px;
             padding-right: 100px;
             padding-top: 25px;
+            text-align: left;
 
         }
         .split-container {
