@@ -58,8 +58,10 @@
             width: 90%;
             padding: 20px;
             text-align: left;
-            margin-left: 55px;
-            margin-right: 55px;
+            padding-left: 55px;
+            padding-bottom: 55px;
+            padding-right: 55px;
+            padding-top: 55px;
 
         }
         .split-container {
