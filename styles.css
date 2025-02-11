@@ -16,6 +16,10 @@
             height: 200px;
             background: white; /* Placeholder for header image */
         }
+        .logo {
+            width: 300px;
+        }
+
         nav {
             display: flex;
             justify-content: space-between;
@@ -31,6 +35,9 @@
         .nav-links a {
             text-decoration: none;
             color: black;
+        }
+ .nav-links a:hover {
+            text-decoration: underline;
         }
         main {
             padding: 20px;
