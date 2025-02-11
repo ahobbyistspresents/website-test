@@ -30,7 +30,7 @@
         .header-image {
             width: 100%;
             height: 200px;
-            background: grey; /* Placeholder for header image */
+            background: white; /* Placeholder for header image */
         }
         nav {
             display: flex;
@@ -57,6 +57,59 @@
             text-align: center;
             padding: 10px;
         }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .half-container {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .full-container {
+            width: 100%;
+            padding: 40px;
+            text-align: left;
+        }
+        .split-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .split-container div {
+            width: 48%;
+        }
+        .divider {
+            width: 2px;
+            background-color: black;
+            height: 100%;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-row input {
+            width: 48%;
+        }
     </style>
 </head>
 <body>
@@ -75,63 +128,57 @@
         </nav>
     </header>
     
-    <main>
-        <section id="about">
-            <h1>About AHP</h1>
-            <p>Design, data, and fun drive every product.</p>
-            <p>Eoghan McHugh, a cycling and guitar enthusiast, founded ACP in 2023 and AGP in 2024 to create giftware for cyclists and guitarists.</p>
-            <p>Each product answers four key questions: Is it clear? Is the design and quality gift-worthy? Will the recipient enjoy it? Will they get something from it? Every item is crafted with these principles, ensuring thoughtful, well-designed gifts for cyclists and guitarists alike.</p>
-        </section>
-        
-        <section id="collaborate">
-            <h2>Let's Collaborate</h2>
-            <p>Bikes and guitars aren't the only hobbies worth obsessing over. But bikes and guitars are what keep me up at night.</p>
-            <p>Got a hobby that you're passionate about? Send me an email. We can find a way to collaborate to bring your idea to life.</p>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Want to stock any of AHP's products? Have an idea for a product of your own? Start the conversation by sending a message.</p>
-            <form id="contactForm" action="https://script.google.com/macros/s/AKfycbxDFoJ5PNZrfBUx_7rEnjhNr-U8tmQ5TMjMK2qJPUTIrc63BTuSOqEPgpu6bWr5GHF2mQ/exec" method="POST">
-  <label for="firstName">First Name:</label>
-  <input type="text" id="firstName" name="firstName" required>
-  
-  <label for="lastName">Last Name:</label>
-  <input type="text" id="lastName" name="lastName" required>
-  
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-  
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-  
-  <button type="submit">Send Message</button>
-</form>
+    <div class="container">
+        <div class="half-container">
+            <h2>A Cyclist's Presents</h2>
+            <a href="cycling-products.html"><img src="cycling-image.jpg" alt="Cycling Products"></a>
+            <button onclick="location.href='cycling-products.html'">Check out AHP's cycling products</button>
+        </div>
+        <div class="half-container">
+            <h2>A Guitarist's Presents</h2>
+            <a href="guitar-products.html"><img src="guitar-image.jpg" alt="Guitar Products"></a>
+            <button onclick="location.href='guitar-products.html'">Check out AGP's guitar products</button>
+        </div>
+    </div>
 
-<script>
-  document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    const formData = new FormData(this);
-    fetch(this.action, {
-      method: "POST",
-      body: formData,
-    })
-    .then(response => response.text())
-    .then(data => {
-      alert("Message sent successfully!");
-      document.getElementById("contactForm").reset();
-    })
-    .catch(error => {
-      alert("There was an error sending your message.");
-    });
-  });
-</script>
-</form>
+    <div class="full-container">
+        <h2>About AHP</h2>
+        <div class="split-container">
+            <div>
+                <p>Design, data, and fun drive every product. Eoghan McHugh, a cycling and guitar enthusiast, founded ACP in 2023 and AGP in 2024 to create giftware for cyclists and guitarists. Each product answers four key questions: Is it clear? Is the design and quality gift-worthy? Will the recipient enjoy it? Will they get something from it? Every item is crafted with these principles, ensuring thoughtful, well-designed gifts for cyclists and guitarists alike.</p>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <img src="about-image.jpg" alt="About AHP">
+            </div>
+        </div>
+    </div>
 
+    <div class="full-container">
+        <h2>Let's Collaborate</h2>
+        <div class="split-container">
+            <div>
+                <p>Bikes and guitars aren't the only hobbies worth obsessing over. But bikes and guitars are what keep me up at night. Got a hobby that you're passionate about? Send me an email. We can find a way to collaborate to bring your idea to life.</p>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <button onclick="location.href='#contact'">Get in touch to collaborate</button>
+            </div>
+        </div>
+    </div>
 
-        </section>
-    </main>
+    <div class="full-container" id="contact">
+        <h2>Contact</h2>
+        <div class="form-row">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+        </div>
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Type your message here" rows="4"></textarea>
+        <button type="submit">Submit</button>
+    </div>
+</body>
+
     
     <footer>
         <p>&copy; 2025 Stories From Ltd. All rights reserved. Company number 12431453</p>
