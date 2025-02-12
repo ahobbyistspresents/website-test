@@ -89,10 +89,10 @@
         .split-container div {
             width: 40%;
         }
-        .divider {
-            width: 4px;
-            background-color: #000000;
-            height: 100%;
+        
+        vl {
+            border-left: 6px #000000;
+            height: 500px;
         }
 
         button {
