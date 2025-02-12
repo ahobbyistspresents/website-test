@@ -11,7 +11,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 95%;
+            width: auto;
             background: #f4f4f4;
             padding: 10px 20px;
         }
@@ -45,10 +45,9 @@
             font-size: 12pt;
             color: black;
             margin: 0;
-            padding: 10%;
-            width: 100%;
-            box-sizing: border-box
-        }
+            padding: 0px;
+            width: auto;
+         }
 
         main {
             padding: 0px;
@@ -70,7 +69,7 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            padding: 50px;
+            padding: 0px;
         }
         .half-container {
             width: 50%;
@@ -79,7 +78,7 @@
             text-align: center;
         }
         .full-container {
-            width: 95%;
+            width: auto;
             padding-left: 150px;
             padding-bottom: 25px;
             padding-right: 150px;
@@ -94,7 +93,7 @@
             
         }
         .split-container div {
-            width: 40%;
+            width: auto;
         }
         
         button {
@@ -110,9 +109,9 @@
         }
 
         input, textarea {
-            width: 95%;
-            padding: 10px;
-            margin-top: 10px;
+            width: auto;
+            padding: 0px;
+            margin-top: 0px;
             box-sizing: border-box;
         }
         .form-row {
@@ -120,5 +119,5 @@
             justify-content: space-between;
         }
         .form-row input {
-            width: 48%;
+            width: auto;
         }
