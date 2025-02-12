@@ -30,7 +30,7 @@
             background: white; /* Placeholder for header image */
         }
 
-        logo {
+        .logo {
             width: 300px;
         }
 
@@ -46,8 +46,6 @@
         .nav-links a:hover {
             text-decoration: underline;
         }
-
-        
 
         main {
             padding: 20px;
@@ -96,11 +94,6 @@
             width: 40%;
         }
         
-        vl {
-            border-left: 6px solid green;
-            height: 500px;
-        }
-
         button {
             display: block;
             margin: 20px auto;
@@ -112,8 +105,9 @@
             cursor: pointer;
             font-size: 16px;
         }
+
         input, textarea {
-            width: 100%;
+            width: 95%;
             padding: 10px;
             margin-top: 10px;
             box-sizing: border-box;
