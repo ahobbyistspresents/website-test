@@ -91,7 +91,7 @@
         }
         
         vl {
-            border-left: 6px #000000;
+            border-left: 6px solid green;
             height: 500px;
         }
 
