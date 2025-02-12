@@ -74,7 +74,8 @@
             padding-top: 30px;
             padding-bottom: 30px;
             box-sizing: border-box;
-        }
+            border-style: solid;
+         }
 
          .full-container {
             width: auto;
