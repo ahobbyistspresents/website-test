@@ -21,6 +21,7 @@
         }
         .logo {
             width: 300px;
+            aspect-ratio: 2/1;
         }
 
         nav {
