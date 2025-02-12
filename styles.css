@@ -30,8 +30,9 @@
             background: white; /* Placeholder for header image */
         }
 
-        .logo {
-            width: 300px;
+        logo {
+            width: 250px;
+            height: 125px;
         }
 
         .nav-links {
