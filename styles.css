@@ -19,8 +19,9 @@
             height: 200px;
             background: white; /* Placeholder for header image */
         }
-        .logo {
-            aspect-ratio: auto;
+        logo {
+            width: 300px;
+            aspect-ratio: 2/1;
         }
 
         nav {
