@@ -126,7 +126,7 @@
         .form-row {
             display: flex;
             */justify-content: space-between;*/
-            gap: 100px;
+            gap: 500px;
             padding-top: 50px;
             padding-bottom: 50px;
         }
