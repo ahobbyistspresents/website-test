@@ -33,12 +33,12 @@
             padding-left: 10px;
         }
         .nav-links a {
-            text-decoration: none;
+            -decoration: none;
             color: black;
         }
 
         .nav-links a:hover {
-            text-decoration: underline;
+            -decoration: underline;
         }
 
        body {
@@ -52,7 +52,7 @@
 
         main {
             padding: 0px;
-            text-align: center;
+            -align: center;
         }
 
         img {
@@ -62,7 +62,7 @@
 
         footer {
             background: #f4f4f4;
-            text-align: center;
+            -align: center;
             padding: 10px;
         }
 
@@ -80,7 +80,7 @@
 
          .full-container {
             width: auto;
-            text-align: left;
+            -align: left;
             padding-left: 150px;
             padding-right: 150px;
             padding-top: 100px;
@@ -92,7 +92,7 @@
             width: 50%;
             padding: 0;
             box-sizing: border-box;
-            text-align: center;
+            -align: center;
         }
         
         .split-container {
@@ -120,7 +120,7 @@
         input, textarea {
             width: 90%;
             padding: 0px;
-            margin-top: 0px;
+            margin-top: 50px;
             box-sizing: border-box;
         }
         .form-row {
