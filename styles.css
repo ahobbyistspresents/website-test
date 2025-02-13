@@ -68,8 +68,6 @@
 
         .container {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-wrap: wrap;
             padding-left: 75px;
             padding-right: 75px;
