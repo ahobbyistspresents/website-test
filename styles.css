@@ -102,7 +102,7 @@
             box-sizing: border-box;
         }
         .split-container div {
-            width: auto;
+            width: 50%;
         }
         
         button {
