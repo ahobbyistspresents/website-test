@@ -33,12 +33,12 @@
             padding-left: 10px;
         }
         .nav-links a {
-            -decoration: none;
+            decoration: none;
             color: black;
         }
 
         .nav-links a:hover {
-            -decoration: underline;
+            decoration: underline;
         }
 
        body {
@@ -52,7 +52,7 @@
 
         main {
             padding: 0px;
-            -align: center;
+            align: center;
         }
 
         img {
@@ -62,7 +62,7 @@
 
         footer {
             background: #f4f4f4;
-            -align: center;
+            align: center;
             padding: 10px;
         }
 
@@ -80,7 +80,7 @@
 
          .full-container {
             width: auto;
-            -align: left;
+            align: left;
             padding-left: 150px;
             padding-right: 150px;
             padding-top: 100px;
@@ -125,7 +125,7 @@
         }
         .form-row {
             display: flex;
-            */justify-content: space-between;*/
+            /*justify-content: space-between;*/
             gap: 500px;
             padding-top: 25px;
             padding-bottom: 25px;
