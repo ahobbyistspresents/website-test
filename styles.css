@@ -120,7 +120,7 @@
         input, textarea {
             width: 90%;
             padding: 0px;
-            margin-top: 25px;
+            margin-top: 0px;
             box-sizing: border-box;
         }
         .form-row {
