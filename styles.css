@@ -127,6 +127,8 @@
             display: flex;
             */justify-content: space-between;*/
             gap: 100px;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
         .form-row input {
             width: auto;
